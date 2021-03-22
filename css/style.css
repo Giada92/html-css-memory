@@ -1,13 +1,12 @@
 /* debugger */
 .container {
     height: 100%;
-    background-color: black;
+  /*   background-color: black; */
 }
 
-header {
-    height: 80px;
+/* header {
     background-color: blueviolet;
-}
+} */
 
 main {
     width: 100%;
@@ -47,7 +46,14 @@ section::after {
 /* Header */
 header {
     height: 80px;
+    line-height: 80px;
     margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
 }
 
 /* main */
@@ -56,11 +62,61 @@ header {
     float: left;
     width: calc(100% / 4 - 20px);
     height: 280px;
-    background-color: darkgoldenrod;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
 }
 
 section {
     margin: 20px 0;
 }
 
+.pattern {
+    height: 100%;
+    background-size: 100%;
+    background-image: url("../img/pattern.png");
+}
 
+.img-air-ballon,
+.img-bicycle,
+.img-ship {
+    width: 100%;
+    padding: 20px;
+}
+
+.img-bicycle,
+.img-ship {
+    visibility: hidden;
+}
+
+.blue,
+.orange {
+    visibility: hidden;
+}
+
+.carta:hover .img-bicycle,
+.carta:hover .blue,
+.carta:hover .img-ship,
+.carta:hover .orange  {
+    visibility: visible;
+}
+.carta:hover > .pattern {
+    visibility: hidden;
+}
+
+.text {
+    text-align: center;
+    font-size: 25px;
+}
+
+.blue {
+    color: blue;
+}
+
+.orange {
+    color: orange;
+}
+
+.fuchsia {
+    color: fuchsia;
+}
